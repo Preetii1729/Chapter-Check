@@ -1,4 +1,40 @@
-h1 {
-    text-align: center;
-    color: aqua;
+* {
+    background-color: #B7CE63;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
 }
+
+h1, h2 {
+    color: #4B5842;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+#main-body {
+    margin: 0 15rem;
+}
+
+#add-new {
+    width: 100%;
+    background-color:#8FB339 ;
+    margin: 1rem 0;
+}
+
+/* 
+colors-dark to light:
+4B5842
+6D863E
+8FB339
+A3C14E
+B7CE63
+C7D59F
+DADDD8
+
+*/
