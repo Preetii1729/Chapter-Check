@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
     res.render("index.ejs");
   });
 
+app.get("/new", (req, res)=> {
+  res.render("review.ejs");
+})
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });

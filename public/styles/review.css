@@ -1,0 +1,25 @@
+.r-input {
+    width: 90%;
+    background-color: #C7D59F;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.rating {
+    width: 45%;
+}
+
+.review {
+    height: 10rem;
+}
+
+#add-review {
+    width: 90%;
+    background-color:#8FB339 ;
+    margin: 0 0.1rem ;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}

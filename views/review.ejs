@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Review</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/review.css">
+</head>
+<body>
+    <div id="main-body">
+        <h2>New Review</h2><br>
+        <form action="/new" method="post">
+            <label for="isbn">ISBN Number</label><br>
+            <input type="number" name="ISBN" class="isbn r-input" >
+            <br><br>
+            <label for="review-title">Review Title</label><br>
+            <input type="text" name="review-title" class="review-title r-input" >
+            <br><br>
+            <label for="rating">Rating:</label><br>
+            <input type="number" name="rating" class="rating r-input" >
+            <br><br>
+            <label for="review">Review/Thoughts: </label><br>
+            <!-- <input type="number" name="rating" class="rating r-input" > -->
+            <textarea name="review" class="review r-input"></textarea>
+            <br><br>
+            <button type="submit" id="add-review">ADD</button>
+        </form>
+    </div>
+    
+</body>
+</html>
