@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter Check</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -18,7 +19,26 @@
         <form action="/new" method="post">
             <input type="submit" name="add" value="+ New Review" id="add-new"> 
         </form>
+        <!-- <i class="fa-solid fa-star" style="color: #FFD43B;"></i> -->
         
+        <div class="reviews">
+            <% thoughts.forEach((thought) => { %>
+                <div class="thought">
+                    <div class="thought-write">
+                        <h3> <%= thought.title %> </h3> by <h4> <%= thought.author %> </h4>
+                        <p> Rating: 
+                            <% for( let index = 0; index < thought.rating; index++ ) { %>
+                                <i class="fa-solid fa-star" style="color: #785e00;"></i>
+                            <% } %>
+                        </p>
+                        <p> <%= thought.review %> </p>
+                    </div>
+                    <div class="thought-pic">
+                        <img src=  <%= `https://covers.openlibrary.org/b/isbn/${thought.isbn}-M.jpg` %> alt="Probs"> 
+                    </div>
+                </div><br>
+            <% }) %>
+        </div>
 
 
         <a href="about.ejs">About us</a>

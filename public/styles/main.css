@@ -2,6 +2,7 @@
     background-color: #B7CE63;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 h1, h2 {
@@ -17,6 +18,21 @@ h2 {
     margin-bottom: 0.3rem;
 }
 
+h3, h4 {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+#add-new{
+    text-align: center;
+}
+
+p{
+    padding: 0px;
+    margin: 00px;
+}
+
 #main-body {
     margin: 0 15rem;
 }
@@ -25,6 +41,11 @@ h2 {
     width: 100%;
     background-color:#8FB339 ;
     margin: 1rem 0;
+}
+
+.thought {
+    display: flex;
+    gap: 1rem;
 }
 
 /* 

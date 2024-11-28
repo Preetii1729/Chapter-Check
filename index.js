@@ -17,8 +17,12 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    res.render("index.ejs");
+app.get("/", async(req, res) => {
+    const thoughts = await db.query("Select * from reviews;");
+    // console.log(thoughts.rows[0]);
+    res.render("index.ejs", {
+      thoughts: thoughts.rows,
+    });
   });
 
 app.post("/new", (req, res)=> {
@@ -46,7 +50,7 @@ app.listen(port, () => {
   
 
 /*
-Make the database and start inserting.
+Make the database and start inserting. //done
 Sort by: title, rating
 Search author
 Search ISBN
